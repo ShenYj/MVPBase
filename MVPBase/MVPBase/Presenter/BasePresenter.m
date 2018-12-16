@@ -11,6 +11,7 @@
 
 @interface BasePresenter ()
 
+@property (nonatomic, weak, readwrite) id object;
 @property (nullable, nonatomic, weak, readwrite) UIViewController *controller;
 
 @end
@@ -45,11 +46,14 @@
     [BaseModel loadDatas:url parameters:parameters handle:self];
 }
 
-
-#pragma mark - ResponseHandle
+#pragma mark - BasePresenterProtocol Model -> Presenter
 
 - (void)onSuccess:(id)response {
     NSLog(@"%@",response);
+    
+    if (self.controller && [self.controller respondsToSelector:@selector(updateUI)]) {
+        [self.controller performSelector:@selector(updateUI)];
+    }
 }
 
 - (void)onFailure:(NSError *)error {

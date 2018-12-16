@@ -16,6 +16,7 @@ PODS:
     - AFNetworking/NSURLSession
   - Masonry (1.1.0)
   - OCMock (3.4.3)
+  - WebViewJavascriptBridge (6.0.3)
   - XcodeCoverage (1.3.1)
   - YYModel (1.0.4)
 
@@ -23,6 +24,7 @@ DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
   - Masonry (~> 1.1.0)
   - OCMock (~> 3.4.3)
+  - WebViewJavascriptBridge (~> 6.0.3)
   - XcodeCoverage (~> 1.3.1)
   - YYModel (~> 1.0.4)
 
@@ -30,9 +32,10 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   OCMock: 43565190abc78977ad44a61c0d20d7f0784d35ab
+  WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   XcodeCoverage: 8afe54ee8bdb772fa9636e67d583d0878b9c98f7
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 6688603bd5238e669aab70896b6e1b93caffa991
+PODFILE CHECKSUM: 4d8983b3555b666dd750e65a72d72f85a29f3bf5
 
 COCOAPODS: 1.4.0.beta.2

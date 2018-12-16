@@ -22,6 +22,8 @@
 		F72898CB21C52F8400102694 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72898CA21C52F8400102694 /* Launch Screen.storyboard */; };
 		F72898D421C5474B00102694 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72898D321C5474B00102694 /* BaseViewController.m */; };
 		F72FBE8D21C6313D0076386E /* GYYXIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F72FBE8C21C6313D0076386E /* GYYXIAPManager.m */; };
+		F72FBE9021C655A90076386E /* MVPWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = F72FBE8F21C655A90076386E /* MVPWebView.m */; };
+		F72FBE9421C67B610076386E /* JavaScriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F72FBE9321C67B610076386E /* JavaScriptBridge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,10 @@
 		F72898D321C5474B00102694 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		F72FBE8B21C6313D0076386E /* GYYXIAPManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GYYXIAPManager.h; sourceTree = "<group>"; };
 		F72FBE8C21C6313D0076386E /* GYYXIAPManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GYYXIAPManager.m; sourceTree = "<group>"; };
+		F72FBE8E21C655A90076386E /* MVPWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPWebView.h; sourceTree = "<group>"; };
+		F72FBE8F21C655A90076386E /* MVPWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPWebView.m; sourceTree = "<group>"; };
+		F72FBE9221C67B610076386E /* JavaScriptBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JavaScriptBridge.h; sourceTree = "<group>"; };
+		F72FBE9321C67B610076386E /* JavaScriptBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JavaScriptBridge.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,7 @@
 		F728985521C4B57C00102694 /* MVPBase */ = {
 			isa = PBXGroup;
 			children = (
+				F72FBE9121C67B340076386E /* JSBridge */,
 				F72FBE8A21C631220076386E /* IAP */,
 				F72898BF21C4D85C00102694 /* Net */,
 				F72898B421C4D84500102694 /* Presenter */,
@@ -222,6 +229,8 @@
 		F72898B321C4D84500102694 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F72FBE8E21C655A90076386E /* MVPWebView.h */,
+				F72FBE8F21C655A90076386E /* MVPWebView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -260,6 +269,15 @@
 				F72FBE8C21C6313D0076386E /* GYYXIAPManager.m */,
 			);
 			path = IAP;
+			sourceTree = "<group>";
+		};
+		F72FBE9121C67B340076386E /* JSBridge */ = {
+			isa = PBXGroup;
+			children = (
+				F72FBE9221C67B610076386E /* JavaScriptBridge.h */,
+				F72FBE9321C67B610076386E /* JavaScriptBridge.m */,
+			);
+			path = JSBridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -551,10 +569,12 @@
 				F728989521C4B5CA00102694 /* AppDelegate.m in Sources */,
 				F72FBE8D21C6313D0076386E /* GYYXIAPManager.m in Sources */,
 				F72898D421C5474B00102694 /* BaseViewController.m in Sources */,
+				F72FBE9021C655A90076386E /* MVPWebView.m in Sources */,
 				F72898BD21C4D84500102694 /* BasePresenter.m in Sources */,
 				F72898C621C527E500102694 /* BaseModel.m in Sources */,
 				F728989421C4B5CA00102694 /* main.m in Sources */,
 				F72898C221C4D89000102694 /* NetworkManager.m in Sources */,
+				F72FBE9421C67B610076386E /* JavaScriptBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

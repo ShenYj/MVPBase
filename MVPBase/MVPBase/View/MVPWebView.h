@@ -1,20 +1,16 @@
 //
-//  GYYXIAPManager.h
+//  MVPWebView.h
 //  MVPBase
 //
 //  Created by ShenYj on 2018/12/16.
 //  Copyright © 2018 ShenYj. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "SingleTonDefine.h"
-
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GYYXIAPManager : NSObject
-
-singleton_h(IAPManager)
+@interface MVPWebView : UIView
 
 @end
 

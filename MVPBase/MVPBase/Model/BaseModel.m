@@ -7,12 +7,13 @@
 //
 
 #import "BaseModel.h"
+#import "BasePresenter.h"
 
 @implementation BaseModel
 
-+ (void)loadDatas:(NSString *)url parameters:(NSDictionary *)parameters handle:(id<ResponseHandle>)handle {
++ (void)loadDatas:(NSString *)url parameters:(NSDictionary *)parameters handle:(id<BasePresenterProtocol>)handle {
     
-    [[NetworkManager sharedNetworkManager] gyyx_request:RequestMethodGET url:url parameters:parameters success:^(id  _Nullable response) {
+    [[NetworkManager sharedNetworkManager] gyyx_request:RequestMethodGET url:url parameters:parameters success:^(id _Nullable response) {
         if (response == nil) {
             NSLog(@"返回数据为null");
             return ;
@@ -23,7 +24,7 @@
             return;
         }
         NSDictionary *dict = res[@"result"];
-        BaseModel *result = [BaseModel yy_modelWithJSON:dict];
+        //BaseModel *result = [BaseModel yy_modelWithJSON:dict];
         if (handle && [handle respondsToSelector:@selector(onSuccess:)]) {
             [handle onSuccess:dict];
         }

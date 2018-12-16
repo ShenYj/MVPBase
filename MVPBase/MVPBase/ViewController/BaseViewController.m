@@ -8,7 +8,7 @@
 
 #import "BaseViewController.h"
 
-@interface BaseViewController ()
+@interface BaseViewController () <BasePresenterProtocol>
 
 @end
 
@@ -30,6 +30,15 @@
                             };
     [self.presenter loadDatas:url parameters:paras];
 }
+
+
+
+#pragma mark - BasePresenterProtocol Presenter -> Model
+
+- (void)updateUI {
+    NSLog(@"%s", __func__);
+}
+
 
 /*
 #pragma mark - Navigation

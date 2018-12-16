@@ -10,19 +10,11 @@
 
 
 NS_ASSUME_NONNULL_BEGIN
-
-
-@protocol ResponseHandle <NSObject>
-
-- (void)onSuccess:(id)response;
-- (void)onFailure:(NSError *)error;
-
-@end
+@protocol BasePresenterProtocol;
 
 @interface BaseModel : NSObject
 
-
-+ (void)loadDatas:(NSString *)url parameters:(NSDictionary *)parameters handle:(id<ResponseHandle>)handle;
++ (void)loadDatas:(NSString *)url parameters:(NSDictionary *)parameters handle:(id<BasePresenterProtocol>)handle;
 
 @end
 

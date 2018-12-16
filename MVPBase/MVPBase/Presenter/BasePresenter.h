@@ -11,23 +11,25 @@
 NS_ASSUME_NONNULL_BEGIN
 
 
-@protocol ResponseHandle;
 @protocol BasePresenterProtocol <NSObject>
 
-@required;
-
-
 @optional;
+// 1. Presenter -> Model
+- (void)updateUI;
 
+// 2. Model -> Presenter
+- (void)onSuccess:(id)response;
+- (void)onFailure:(NSError *)error;
 
 @end
 
-@interface BasePresenter <T> : NSObject <ResponseHandle>
+//@protocol ResponseHandle;
+@interface BasePresenter <T> : NSObject <BasePresenterProtocol>
 
 /**
  持有Presenter的视图或其他对象
  */
-@property (nonatomic, weak) T object;
+@property (nonatomic, weak, readonly) T<BasePresenterProtocol> object;
 /**
  持有Presenter的控制器,允许为`nil`
  如果通过<i>initWithController:</i>实例化,不允许为`nil`
