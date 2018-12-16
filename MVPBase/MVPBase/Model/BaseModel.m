@@ -12,7 +12,7 @@
 
 + (void)loadDatas:(NSString *)url parameters:(NSDictionary *)parameters handle:(id<ResponseHandle>)handle {
     
-    [[NetworkManager sharedNetworkManager] Get:url parameters:parameters success:^(id  _Nullable response) {
+    [[NetworkManager sharedNetworkManager] gyyx_request:RequestMethodGET url:url parameters:parameters success:^(id  _Nullable response) {
         if (response == nil) {
             NSLog(@"返回数据为null");
             return ;

@@ -21,6 +21,7 @@
 		F72898C621C527E500102694 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F72898C521C527E500102694 /* BaseModel.m */; };
 		F72898CB21C52F8400102694 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72898CA21C52F8400102694 /* Launch Screen.storyboard */; };
 		F72898D421C5474B00102694 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72898D321C5474B00102694 /* BaseViewController.m */; };
+		F72FBE8D21C6313D0076386E /* GYYXIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F72FBE8C21C6313D0076386E /* GYYXIAPManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		F72898CA21C52F8400102694 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F72898D221C5474B00102694 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		F72898D321C5474B00102694 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		F72FBE8B21C6313D0076386E /* GYYXIAPManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GYYXIAPManager.h; sourceTree = "<group>"; };
+		F72FBE8C21C6313D0076386E /* GYYXIAPManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GYYXIAPManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,7 @@
 		F728985521C4B57C00102694 /* MVPBase */ = {
 			isa = PBXGroup;
 			children = (
+				F72FBE8A21C631220076386E /* IAP */,
 				F72898BF21C4D85C00102694 /* Net */,
 				F72898B421C4D84500102694 /* Presenter */,
 				F72898B221C4D84500102694 /* Model */,
@@ -247,6 +251,15 @@
 				F72898C121C4D89000102694 /* NetworkManager.m */,
 			);
 			path = Net;
+			sourceTree = "<group>";
+		};
+		F72FBE8A21C631220076386E /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				F72FBE8B21C6313D0076386E /* GYYXIAPManager.h */,
+				F72FBE8C21C6313D0076386E /* GYYXIAPManager.m */,
+			);
+			path = IAP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -536,6 +549,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F728989521C4B5CA00102694 /* AppDelegate.m in Sources */,
+				F72FBE8D21C6313D0076386E /* GYYXIAPManager.m in Sources */,
 				F72898D421C5474B00102694 /* BaseViewController.m in Sources */,
 				F72898BD21C4D84500102694 /* BasePresenter.m in Sources */,
 				F72898C621C527E500102694 /* BaseModel.m in Sources */,
