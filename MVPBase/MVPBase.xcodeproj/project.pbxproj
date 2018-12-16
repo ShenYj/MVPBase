@@ -13,10 +13,14 @@
 		F728987021C4B57D00102694 /* MVPBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F728986F21C4B57D00102694 /* MVPBaseTests.m */; };
 		F728987B21C4B57D00102694 /* MVPBaseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F728987A21C4B57D00102694 /* MVPBaseUITests.m */; };
 		F728989121C4B5CA00102694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F728988A21C4B5CA00102694 /* Assets.xcassets */; };
-		F728989221C4B5CA00102694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F728988B21C4B5CA00102694 /* LaunchScreen.storyboard */; };
 		F728989321C4B5CA00102694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F728988D21C4B5CA00102694 /* Main.storyboard */; };
 		F728989421C4B5CA00102694 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F728988F21C4B5CA00102694 /* main.m */; };
 		F728989521C4B5CA00102694 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F728989021C4B5CA00102694 /* AppDelegate.m */; };
+		F72898BD21C4D84500102694 /* BasePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F72898B821C4D84500102694 /* BasePresenter.m */; };
+		F72898C221C4D89000102694 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F72898C121C4D89000102694 /* NetworkManager.m */; };
+		F72898C621C527E500102694 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F72898C521C527E500102694 /* BaseModel.m */; };
+		F72898CB21C52F8400102694 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72898CA21C52F8400102694 /* Launch Screen.storyboard */; };
+		F72898D421C5474B00102694 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72898D321C5474B00102694 /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +60,21 @@
 		F728987C21C4B57D00102694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F728988921C4B5CA00102694 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F728988A21C4B5CA00102694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F728988C21C4B5CA00102694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F728988E21C4B5CA00102694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F728988F21C4B5CA00102694 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F728989021C4B5CA00102694 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F728989721C4B68F00102694 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F728989A21C4BACD00102694 /* SingleTonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleTonDefine.h; sourceTree = "<group>"; };
+		F72898B621C4D84500102694 /* BasePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePresenter.h; sourceTree = "<group>"; };
+		F72898B821C4D84500102694 /* BasePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasePresenter.m; sourceTree = "<group>"; };
+		F72898C021C4D89000102694 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		F72898C121C4D89000102694 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		F72898C321C4DA7300102694 /* BlockType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockType.h; sourceTree = "<group>"; };
+		F72898C421C527E500102694 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		F72898C521C527E500102694 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		F72898CA21C52F8400102694 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F72898D221C5474B00102694 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		F72898D321C5474B00102694 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +153,11 @@
 		F728985521C4B57C00102694 /* MVPBase */ = {
 			isa = PBXGroup;
 			children = (
+				F72898BF21C4D85C00102694 /* Net */,
+				F72898B421C4D84500102694 /* Presenter */,
+				F72898B221C4D84500102694 /* Model */,
+				F72898B321C4D84500102694 /* View */,
+				F72898B921C4D84500102694 /* ViewController */,
 				F728988821C4B5CA00102694 /* SupportingFiles */,
 			);
 			path = MVPBase;
@@ -171,7 +190,7 @@
 				F728989021C4B5CA00102694 /* AppDelegate.m */,
 				F728988F21C4B5CA00102694 /* main.m */,
 				F728988A21C4B5CA00102694 /* Assets.xcassets */,
-				F728988B21C4B5CA00102694 /* LaunchScreen.storyboard */,
+				F72898CA21C52F8400102694 /* Launch Screen.storyboard */,
 				F728988D21C4B5CA00102694 /* Main.storyboard */,
 			);
 			path = SupportingFiles;
@@ -181,8 +200,53 @@
 			isa = PBXGroup;
 			children = (
 				F728989721C4B68F00102694 /* PrefixHeader.pch */,
+				F728989A21C4BACD00102694 /* SingleTonDefine.h */,
+				F72898C321C4DA7300102694 /* BlockType.h */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		F72898B221C4D84500102694 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F72898C421C527E500102694 /* BaseModel.h */,
+				F72898C521C527E500102694 /* BaseModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F72898B321C4D84500102694 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F72898B421C4D84500102694 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F72898B621C4D84500102694 /* BasePresenter.h */,
+				F72898B821C4D84500102694 /* BasePresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F72898B921C4D84500102694 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F72898D221C5474B00102694 /* BaseViewController.h */,
+				F72898D321C5474B00102694 /* BaseViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F72898BF21C4D85C00102694 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				F72898C021C4D89000102694 /* NetworkManager.h */,
+				F72898C121C4D89000102694 /* NetworkManager.m */,
+			);
+			path = Net;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,9 +361,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F72898CB21C52F8400102694 /* Launch Screen.storyboard in Resources */,
 				F728989321C4B5CA00102694 /* Main.storyboard in Resources */,
 				F728989121C4B5CA00102694 /* Assets.xcassets in Resources */,
-				F728989221C4B5CA00102694 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +536,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F728989521C4B5CA00102694 /* AppDelegate.m in Sources */,
+				F72898D421C5474B00102694 /* BaseViewController.m in Sources */,
+				F72898BD21C4D84500102694 /* BasePresenter.m in Sources */,
+				F72898C621C527E500102694 /* BaseModel.m in Sources */,
 				F728989421C4B5CA00102694 /* main.m in Sources */,
+				F72898C221C4D89000102694 /* NetworkManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,14 +576,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F728988B21C4B5CA00102694 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F728988C21C4B5CA00102694 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		F728988D21C4B5CA00102694 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
