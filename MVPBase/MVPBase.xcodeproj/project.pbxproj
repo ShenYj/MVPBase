@@ -24,6 +24,7 @@
 		F72FBE8D21C6313D0076386E /* GYYXIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F72FBE8C21C6313D0076386E /* GYYXIAPManager.m */; };
 		F72FBE9021C655A90076386E /* MVPWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = F72FBE8F21C655A90076386E /* MVPWebView.m */; };
 		F72FBE9421C67B610076386E /* JavaScriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F72FBE9321C67B610076386E /* JavaScriptBridge.m */; };
+		F72FBE9821C7E9650076386E /* BasePresenterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F72FBE9721C7E9650076386E /* BasePresenterTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		F72FBE8F21C655A90076386E /* MVPWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPWebView.m; sourceTree = "<group>"; };
 		F72FBE9221C67B610076386E /* JavaScriptBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JavaScriptBridge.h; sourceTree = "<group>"; };
 		F72FBE9321C67B610076386E /* JavaScriptBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JavaScriptBridge.m; sourceTree = "<group>"; };
+		F72FBE9721C7E9650076386E /* BasePresenterTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasePresenterTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 		F728986E21C4B57D00102694 /* MVPBaseTests */ = {
 			isa = PBXGroup;
 			children = (
+				F72FBE9721C7E9650076386E /* BasePresenterTest.m */,
 				F728986F21C4B57D00102694 /* MVPBaseTests.m */,
 				F728987121C4B57D00102694 /* Info.plist */,
 			);
@@ -582,6 +585,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F72FBE9821C7E9650076386E /* BasePresenterTest.m in Sources */,
 				F728987021C4B57D00102694 /* MVPBaseTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

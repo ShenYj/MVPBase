@@ -47,7 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithObject:(T)object controller:(nullable UIViewController *)controller NS_REQUIRES_SUPER;
 - (instancetype)initWithObject:(T)object NS_REQUIRES_SUPER;
 - (instancetype)initWithController:(nullable UIViewController *)controller NS_REQUIRES_SUPER;
-- (instancetype)init NS_UNAVAILABLE;
+//- (instancetype)init NS_UNAVAILABLE;
 
 /**
  *  @metohd detachObject
@@ -58,6 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 - (void)loadDatas:(NSString *)url parameters:(NSDictionary *)parameters;
+
 
 @end
 
