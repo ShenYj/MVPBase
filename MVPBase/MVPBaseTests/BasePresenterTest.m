@@ -46,8 +46,13 @@
 //    c = [p add:a with:b];
 //    XCTAssertEqual(c, 3);
     
-    id presenter = OCMClassMock([BasePresenter class]);
-    
+    id objectMock = OCMClassMock([UIView class]);
+    id controllerMock = OCMClassMock([UIViewController class]);
+    BasePresenter *presenterMock = [[BasePresenter alloc] initWithObject:objectMock controller:controllerMock];
+//    OCMStub([[BasePresenter alloc] initWithObject:objectMock controller:controllerMock])._andReturn(presenterMock);
+//    [presenterMock detachObject];
+    OCMVerify([presenterMock detachObject]);
+    XCTAssertNil(objectMock, @"Object is not nil !");
 }
 
 - (void)testPerformanceExample {
