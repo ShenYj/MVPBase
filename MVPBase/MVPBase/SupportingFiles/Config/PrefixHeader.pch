@@ -19,6 +19,12 @@
 #define NSLog(...)
 #endif
 
+//#ifndef __OPTIMIZE__
+//// release模式
+//#else
+//
+//#endif
+
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <Masonry.h>
